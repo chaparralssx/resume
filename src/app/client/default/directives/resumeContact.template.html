@@ -1,0 +1,15 @@
+<section class="section-contact">
+    <h2 class="section-title">Contact</h2>
+    <span itemprop="name">{{me.firstName}} {{me.middleName}} {{me.lastName}}</span>
+    <img src="{{me.image}}" itemprop="image" alt="Photo of {{me.firstName}} {{me.middleName}} {{me.lastName}}" />
+    <span itemprop="jobTitle">{{me.jobTitle}}</span>
+    <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <span itemprop="streetAddress">{{me.streetAddress}}</span>
+        <span itemprop="addressLocality">{{me.addressLocality}}</span>,
+        <span itemprop="addressRegion">{{me.addressRegion}}</span>
+        <span itemprop="postalCode">{{me.postalCode}}</span>
+    </div>
+    <span itemprop="telephone">{{me.telephone}}</span>
+    <a href="mailto:{{me.email}}" itemprop="email">{{me.email}}</a>
+    <a href="http://{{me.url}}" itemprop="url">{{me.url}}</a>
+</section>
