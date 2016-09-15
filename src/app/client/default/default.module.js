@@ -7,8 +7,8 @@ angular.module('app.default', ['app']).config(config);
  */
 function config($stateProvider) {
     $stateProvider
-        .state('home', {
+        .state('resume', {
             url: '/',
-            templateUrl: 'default/views/home.view.html'
+            templateUrl: 'default/views/resume.view.html'
         });     
 }
