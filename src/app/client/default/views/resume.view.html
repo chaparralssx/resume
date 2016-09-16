@@ -1,17 +1,46 @@
-
 <section class="view-resume" ng-controller="ResumeController as ResumeCtrl" itemscope itemtype="http://schema.org/Person">
-    <h1>Resume</h1>
 
-    <resume-contact contact="ResumeCtrl.contact"></resume-contact>
+    <header>
+        <h1>{{ResumeCtrl.contact.firstName}} {{ResumeCtrl.contact.middleName}} {{ResumeCtrl.contact.lastName}}'s Resume</h1>
+    </header>
 
-    <resume-summary summary="ResumeCtrl.summary"></resume-summary>
+    <div class="resume-sheet">
+        <div class="resume-overview">
 
-    <resume-specialties specialties="ResumeCtrl.specialties"></resume-specialties>
+            <resume-summary summary="ResumeCtrl.summary"></resume-summary>
 
-    <resume-experience experience="ResumeCtrl.experience"></resume-experience>
+            <resume-specialties specialties="ResumeCtrl.specialties"></resume-specialties>
 
-    <resume-education education="ResumeCtrl.education"></resume-education>
+        </div>
 
-    <resume-volunteer volunteer="ResumeCtrl.volunteer"></resume-volunteer>
+
+        <div class="resume-masthead">
+
+            <resume-contact contact="ResumeCtrl.contact"></resume-contact>
+
+        </div>
+
+
+        <div class="resume-body">
+
+            <resume-experience experience="ResumeCtrl.experience"></resume-experience>
+
+            <resume-education education="ResumeCtrl.education"></resume-education>
+
+            <resume-volunteer volunteer="ResumeCtrl.volunteer"></resume-volunteer>
+
+        </div>
+    </div>
+
+    <section class="resume-technical">
+        <h2>Do cool stuff to this resume</h2>
+        <ul>
+            <li><a href="https://gsnedders.html5.org/outliner/" target="_blank">See the HTML5 outline ('cause that's what geeks do)</a></li>
+            <li><a href="https://search.google.com/structured-data/testing-tool" target="_blank">Show the structured data (like cookies for SEO - eat up, yum yum!)</a></li>
+            <li><a href="" target="_blank">WCAG Test (accessibility is important!)</a></li>
+            <li><a href="" target="_blank">Toggle Theme (some sense of how a screen reader would see it)</a></li>
+            <li><a href="" target="_blank">Switch Theme (not impressed yet? maybe you need to see me differently)</a></li>
+        </ul>
+    </section>
 
 </section>
