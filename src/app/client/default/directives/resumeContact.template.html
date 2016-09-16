@@ -1,15 +1,14 @@
-<section class="section-contact">
+<section class="resume-contact">
     <h2 class="section-title">Contact</h2>
-    <span itemprop="name">{{contact.firstName}} {{contact.middleName}} {{contact.lastName}}</span>
-    <img src="{{contact.image}}" itemprop="image" alt="Photo of {{contact.firstName}} {{contact.middleName}} {{contact.lastName}}" />
-    <span itemprop="jobTitle">{{contact.jobTitle}}</span>
-    <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-        <span itemprop="streetAddress">{{contact.streetAddress}}</span>
-        <span itemprop="addressLocality">{{contact.addressLocality}}</span>,
-        <span itemprop="addressRegion">{{contact.addressRegion}}</span>
-        <span itemprop="postalCode">{{contact.postalCode}}</span>
+    <img ng-if="contact.image" itemprop="image" class="contact-image" src="public/assets/img/{{contact.image}}" alt="Photo of {{contact.firstName}} {{contact.middleName}} {{contact.lastName}}" />
+    <div ng-if="contact.firstName" itemprop="name" class="contact-name">{{contact.firstName}} {{contact.middleName}} {{contact.lastName}}</div>
+    <div ng-if="contact.jobtitle" itemprop="jobTitle" class="contact-jobtitle">{{contact.jobtitle}}</div>
+    <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="contact-address">
+        <span ng-if="contact.streetAddress" itemprop="streetAddress" class="contact-address">{{contact.streetAddress}}</span>,
+        <span ng-if="contact.addressLocality" itemprop="addressLocality" class="contact-city">{{contact.addressLocality}}</span>,&nbsp;<span ng-if="contact.addressRegion" itemprop="addressRegion" class="contact-state">{{contact.addressRegion}}</span>
+        <span ng-if="contact.postalCode" itemprop="postalCode" class="contact-zip">{{contact.postalCode}}</span>
     </div>
-    <span itemprop="telephone">{{contact.telephone}}</span>
-    <a href="mailto:{{contact.email}}" itemprop="email">{{contact.email}}</a>
-    <a href="http://{{contact.url}}" itemprop="url">{{contact.url}}</a>
+    <a ng-if="contact.telephone" itemprop="telephone" class="contact-telephone" href="tel:+{{contact.telephone}}">{{contact.telephone}}</a>
+    <a ng-if="contact.email" href="mailto:{{contact.email}}" itemprop="email" class="contact-email">{{contact.email}}</a>
+    <a ng-if="contact.url" href="http://{{contact.url}}" itemprop="url" class="contact-url">{{contact.url}}</a>
 </section>

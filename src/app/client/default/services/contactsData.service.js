@@ -11,7 +11,7 @@ function contactData() {
         lastName: 'Blamey',
         email: 'rscott@theblameys.net',
         jobtitle: 'Project Manager, Business/Systems Analyst, Developer',
-        image: '',
+        image: 'rscottblamey-professional.png',
         streetAddress: 'N7787 Ledgeview Springs Dr.',
         addressLocality: 'Fond du Lac',
         addressRegion: 'WI',

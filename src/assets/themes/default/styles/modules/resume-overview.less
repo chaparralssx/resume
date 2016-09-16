@@ -1,0 +1,63 @@
+.resume-overview {
+    a {
+        color: white;
+    }
+    .contact-image {
+        .img-circle;
+        background-color: @gray-lighter;
+    }
+    .resume-contact {
+        display: none;
+    }
+    .resume-summary {
+        .description {
+            text-align: justify;
+            text-justify: auto; // IE 5.5+ only 
+        }
+    }
+}
+
+@media (max-width: @screen-sm) {
+    .resume-overview {
+        .resume-headshot {
+            display: none;
+        }
+        .resume-contact {
+            display: block;
+            .clearfix;
+            .contact-image {
+                float: left;
+                display: block;
+                max-width: 128px;
+                margin-right: @padding-large-horizontal;
+            }
+            .section-title {
+                display: none;
+            }
+            .contact-name {
+                font-size: 2rem;
+            }
+            .contact-jobtitle {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: @screen-xs) {
+    .resume-overview {
+        .resume-contact {
+            font-size: .8rem;
+            line-height: 1.15;
+            text-align: center;
+            .contact-image {
+                float: none;
+                display: inline;
+                margin-bottom: @padding-base-vertical;
+            }
+            .contact-address {
+                margin-bottom: @padding-base-vertical;
+            }
+        }
+    }
+}

@@ -8,7 +8,11 @@
 
         <div class="resume-overview">
 
-            <img src="{{ResumeCtrl.contact.image}}" itemprop="image" alt="Photo of {{ResumeCtrl.contact.firstName}} {{ResumeCtrl.contact.middleName}} {{ResumeCtrl.contact.lastName}}" />
+            <div class="resume-headshot">
+                <img src="public/assets/img/{{ResumeCtrl.contact.image}}" itemprop="image" class="contact-image" alt="Photo of {{ResumeCtrl.contact.firstName}} {{ResumeCtrl.contact.middleName}} {{ResumeCtrl.contact.lastName}}" />
+            </div>
+
+            <resume-contact contact="ResumeCtrl.contact"></resume-contact>
 
             <resume-summary summary="ResumeCtrl.summary"></resume-summary>
 

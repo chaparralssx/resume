@@ -1,27 +1,27 @@
 .view-resume {
-    border: 1px solid #eeeeee;
-    .box-shadow(8px 8px 4px @gray-lighter);
+    .box-shadow(8px 8px 4px @gray-light);
     > header {
         display: none;
     }
     .resume-sheet {
         display: table;
+        background-color: white;
         margin-left: -@grid-gutter-width / 2;
         margin-right: -@grid-gutter-width / 2;
     }
     .resume-overview {
         display: table-cell;
+        vertical-align: top;
         width: 25%;
-        background-color: @gray-darker;
+        background-color: @brand-dark;
         color: @gray-lighter;
-        padding-left:  (@grid-gutter-width / 2);
-        padding-right: (@grid-gutter-width / 2);
+        padding: @padding-large-vertical (@grid-gutter-width / 2);
     }
     .resume-main {
         display: table-cell;
+        vertical-align: top;
         width: 75%;
-        padding-left:  (@grid-gutter-width / 2);
-        padding-right: (@grid-gutter-width / 2);
+        padding: @padding-large-vertical (@grid-gutter-width / 2);
     }
     .resume-masthead {
     }
@@ -30,5 +30,16 @@
     .resume-technical {
         .make-row();
         //.make-sm-column(12);
+    }
+}
+
+@media (max-width: @screen-sm) {
+    .view-resume {
+        .resume-sheet,
+        .resume-overview,
+        .resume-main {
+            display: block;
+            width: auto;
+        }
     }
 }

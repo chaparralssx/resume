@@ -1,0 +1,27 @@
+.resume-masthead {
+    margin-bottom: @padding-large-vertical;
+    .resume-contact {
+        .contact-name,
+        .contact-jobtitle {
+            color: @brand-primary;
+        }
+        .section-title,
+        .contact-image {
+            display: none;
+        }
+        .contact-email,
+        .contact-url {
+            &::before {
+                color: @brand-primary;
+            }
+        }
+    }
+}
+
+@media (max-width: @screen-sm) {
+    .resume-masthead {
+        .resume-contact {
+            display: none;
+        }
+    }
+}
