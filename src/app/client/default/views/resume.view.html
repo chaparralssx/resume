@@ -1,11 +1,14 @@
-<section class="view-resume" ng-controller="ResumeController as ResumeCtrl" itemscope itemtype="http://schema.org/Person">
+<section class="view-resume container" ng-controller="ResumeController as ResumeCtrl" itemscope itemtype="http://schema.org/Person">
 
     <header>
         <h1>{{ResumeCtrl.contact.firstName}} {{ResumeCtrl.contact.middleName}} {{ResumeCtrl.contact.lastName}}'s Resume</h1>
     </header>
 
     <div class="resume-sheet">
+
         <div class="resume-overview">
+
+            <img src="{{ResumeCtrl.contact.image}}" itemprop="image" alt="Photo of {{ResumeCtrl.contact.firstName}} {{ResumeCtrl.contact.middleName}} {{ResumeCtrl.contact.lastName}}" />
 
             <resume-summary summary="ResumeCtrl.summary"></resume-summary>
 
@@ -13,23 +16,27 @@
 
         </div>
 
+        <div class="resume-main">
 
-        <div class="resume-masthead">
+            <div class="resume-masthead">
 
-            <resume-contact contact="ResumeCtrl.contact"></resume-contact>
+                <resume-contact contact="ResumeCtrl.contact"></resume-contact>
+
+            </div>
+
+
+            <div class="resume-body">
+
+                <resume-experience experience="ResumeCtrl.experience"></resume-experience>
+
+                <resume-education education="ResumeCtrl.education"></resume-education>
+
+                <resume-volunteer volunteer="ResumeCtrl.volunteer"></resume-volunteer>
+
+            </div>
 
         </div>
 
-
-        <div class="resume-body">
-
-            <resume-experience experience="ResumeCtrl.experience"></resume-experience>
-
-            <resume-education education="ResumeCtrl.education"></resume-education>
-
-            <resume-volunteer volunteer="ResumeCtrl.volunteer"></resume-volunteer>
-
-        </div>
     </div>
 
     <section class="resume-technical">
