@@ -1,20 +1,23 @@
 <section class="resume-experience">
     <h2 class="section-title">Experience</h2>
-    <article ng-repeat="experience in experiences" class="experience">
-        <h3 ng-if="experience.position" class="position">{{experience.position}}</h3>
-        <div ng-if="experience.company" class="company">{{experience.company}}</div>
-        <div ng-if="experience.companyDesc" class="companyDesc">{{experience.companyDesc}}</div>
-        <div ng-if="experience.position" class="position">{{experience.position}}</div>
-        <div ng-if="experience.tech.length" class="tech">
-            <div class="tech-title">Tools</div>
+    <article ng-repeat="experience in experiences" itemscope itemtype="http://schema.org/Organization" class="experience">
+        <h3 ng-if="experience.position" class="experience-position">{{experience.position}}</h3>
+        <div class="experience-period">
+            <span ng-if="experience.start" class="experience-start">{{experience.start}}</span>
+            <span ng-if="experience.end" class="experience-end">{{experience.end}}</span>
+        </div>
+        <div ng-if="experience.company" itemprop="name" class="experience-company">{{experience.company}}</div>
+        <div ng-if="experience.companyDesc" class="experience-companydesc">{{experience.companyDesc}}</div>
+        <div class="experience-address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span ng-if="experience.city" itemprop="addressLocality" class="experience-city">{{experience.city}}</span>,
+            <span ng-if="experience.state" itemprop="addressRegion" class="experience-state">{{experience.state}}</span>
+        </div>
+        <div ng-if="experience.tech.length" class="experience-tech">
+            <div class="tech-title">Tech: </div>
             <ul>
                 <li ng-repeat="tech in experience.tech">{{tech}}</li>
             </ul>
         </div>
-        <div ng-if="experience.city" class="city">{{experience.city}}</div>
-        <div ng-if="experience.state" class="state">{{experience.state}}</div>
-        <div ng-if="experience.start" class="start">{{experience.start}}</div>
-        <div ng-if="experience.end" class="end">{{experience.end}}</div>
-        <div ng-if="experience.description" class="description"><div ng-bind-html="experience.description | trust"></div></div>
+        <div ng-if="experience.description" itemprop="description" class="experience-description"><div ng-bind-html="experience.description | trust"></div></div>
     </article>
 </section>

@@ -1,0 +1,47 @@
+.resume-experience {
+    .experience {
+        padding-bottom: @padding-large-vertical * 2;
+        .clearfix();
+    }
+    .experience-position {
+        float: left;
+        margin: 0;
+    }
+    .experience-period {
+        float: right;
+        clear: right;
+        font-weight: bold;
+        padding-top: .25em;
+    }
+    .experience-company {
+        float: left;
+        clear: left;
+        font-weight: bold;
+        margin-right: @padding-small-horizontal;
+    }
+    .experience-companydesc {
+        float: left;
+        font-style: italic;
+    }
+    .experience-address {
+        float: right;
+        clear: right;
+        margin-bottom: @padding-large-vertical;
+    }
+    .experience-tech {
+        clear: both;
+        .clearfix();
+        margin-bottom: @padding-base-vertical;
+        ul {
+            display: inline;
+            .inline-bullet-list;
+        }
+    }
+    .tech-title {
+        font-weight: bold;
+        display: inline;
+    }
+    .experience-description {
+        clear: both;
+    }
+}

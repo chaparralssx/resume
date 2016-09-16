@@ -12,7 +12,7 @@ function experienceData() {
             state: 'WI',
             start: 'July 2015',
             end: 'Present',
-            description: 'TECHNOLOGIES: HTML/CSS/JS, Angular, Node/NPM, Bower, Continuous Integration, Protractor, GIT, Photoshop, Visio, OpenShift<br>• Constructed Optum HSA Online Enrollment replacement portal user interface<br>• Constructing Optum Financial Services replacement portal user interfaces<br>• Developed Bootstrap-LESS-based multi-brand capable CSS framework with strict adherence to brand guidelines<br>• Automate end-to-end tests with Protractor<br>• Created, populated and manage Optum Financial Services Portals team wiki<br>• Implemented node-kss methodology for documenting CSS and generating style guides, which improves dev. consistency<br>• Presented methodologies to Common UX Councils as subject matter expert',
+            description: '<ul><li>Constructing Optum Financial Services replacement portal user interfaces</li><li>Developed Bootstrap-LESS-based multi-brand capable CSS framework with strict adherence to brand guidelines</li><li>Automate end-to-end tests with Protractor</li><li>Created, populated and manage Optum Financial Services Portals team wiki</li><li>Implemented node-kss methodology for documenting CSS and generating style guides, which improves dev. consistency</li><li>Presented methodologies to Common UX Councils as subject matter expert</li></ul>',
             tech: [
                 'HTML/CSS/JS',
                 'Angular',
