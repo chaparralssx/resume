@@ -7,10 +7,8 @@ function resumeSummary() {
     return {
         restrict: 'E',
         replace: true, // Replace the directive element with the template HTML
-        link: function(scope){
-            scope.summary = {
-                text: 'Project Manager, Frontend Developer, Business/Systems Analyst, and respected team leader with a keenness for Agile, Six Sigma and Lean methodologies. MBA with fifteen years IT management and development experience.  Driven to continually improve systems in the workplace, and uniquely qualified with both IT experience and business acumen.'
-            };
+        scope: {
+            summary: '='
         },
         templateUrl: 'default/directives/resumeSummary.template.html'
     };

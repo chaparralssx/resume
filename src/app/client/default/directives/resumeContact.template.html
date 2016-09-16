@@ -1,15 +1,15 @@
 <section class="section-contact">
     <h2 class="section-title">Contact</h2>
-    <span itemprop="name">{{me.firstName}} {{me.middleName}} {{me.lastName}}</span>
-    <img src="{{me.image}}" itemprop="image" alt="Photo of {{me.firstName}} {{me.middleName}} {{me.lastName}}" />
-    <span itemprop="jobTitle">{{me.jobTitle}}</span>
+    <span itemprop="name">{{contact.firstName}} {{contact.middleName}} {{contact.lastName}}</span>
+    <img src="{{contact.image}}" itemprop="image" alt="Photo of {{contact.firstName}} {{contact.middleName}} {{contact.lastName}}" />
+    <span itemprop="jobTitle">{{contact.jobTitle}}</span>
     <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-        <span itemprop="streetAddress">{{me.streetAddress}}</span>
-        <span itemprop="addressLocality">{{me.addressLocality}}</span>,
-        <span itemprop="addressRegion">{{me.addressRegion}}</span>
-        <span itemprop="postalCode">{{me.postalCode}}</span>
+        <span itemprop="streetAddress">{{contact.streetAddress}}</span>
+        <span itemprop="addressLocality">{{contact.addressLocality}}</span>,
+        <span itemprop="addressRegion">{{contact.addressRegion}}</span>
+        <span itemprop="postalCode">{{contact.postalCode}}</span>
     </div>
-    <span itemprop="telephone">{{me.telephone}}</span>
-    <a href="mailto:{{me.email}}" itemprop="email">{{me.email}}</a>
-    <a href="http://{{me.url}}" itemprop="url">{{me.url}}</a>
+    <span itemprop="telephone">{{contact.telephone}}</span>
+    <a href="mailto:{{contact.email}}" itemprop="email">{{contact.email}}</a>
+    <a href="http://{{contact.url}}" itemprop="url">{{contact.url}}</a>
 </section>
