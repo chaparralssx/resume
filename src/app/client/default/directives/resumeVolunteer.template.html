@@ -1,0 +1,13 @@
+<section class="section-volunteer">
+    <h2 class="section-title">Volunteer</h2>
+    <article ng-repeat="vol in volunteer" class="volunteer">
+        <h3 ng-if="vol.organization" class="organization">{{vol.organization}}</h3>
+        <div ng-if="vol.role" class="role">{{vol.role}}</div>
+        <div ng-if="vol.city" class="city">{{vol.city}}</div>
+        <div ng-if="vol.state" class="state">{{vol.state}}</div>
+        <div ng-if="vol.start" class="start">{{vol.start}}</div>
+        <div ng-if="vol.end" class="end">{{vol.end}}</div>
+        <div ng-if="vol.cause" class="cause">{{vol.cause}}</div>
+        <div ng-if="vol.description" class="description"><div ng-bind-html="vol.description | trust"></div></div>        
+    </article>
+</section>
