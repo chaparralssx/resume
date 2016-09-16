@@ -332,6 +332,32 @@ function experienceData() {
             tech: [
 
             ]
+        },
+        {
+            position: 'Machine Operator',
+            company: 'Mid-States Aluminum',
+            companyDesc: 'Aluminum extrusion and fabrication',
+            city: 'Fond du Lac',
+            state: 'WI',
+            start: '1999',
+            end: '1999',
+            description: 'Seasonal employment',
+            tech: [
+
+            ]
+        },
+        {
+            position: 'Internship',
+            company: '1-800-Car-Club / CarClub.com',
+            companyDesc: 'Car buying service',
+            city: 'San Francisco',
+            state: 'CA',
+            start: '1998',
+            end: '1998',
+            description: '• Wrote the Customer Service Representatives Standard Operating Procedures document',
+            tech: [
+
+            ]
         }
     ];
 
