@@ -27,13 +27,28 @@
     }
 }
 
-@media (max-width: @screen-sm) {
+@media screen and (max-width: @screen-sm) {
     .view-resume {
         .resume-sheet,
         .resume-overview,
         .resume-main {
             display: block;
             width: auto;
+        }
+    }
+}
+
+@media print {
+    html,
+    body {
+        font-size: @font-size-base * .75;
+    }
+    .view-resume {
+        .resume-overview {
+            padding: 0 inherit 0 0;
+        }
+        .resume-main {
+            padding: 0;
         }
     }
 }

@@ -25,7 +25,7 @@
     }
 }
 
-@media (max-width: @screen-sm) {
+@media screen and (max-width: @screen-sm) {
     .resume-overview {
         .resume-headshot {
             display: none;
@@ -63,7 +63,7 @@
     }
 }
 
-@media (max-width: @screen-xs) {
+@media screen and (max-width: @screen-xs) {
     .resume-overview {
         .resume-contact {
             font-size: .8rem;
@@ -76,6 +76,17 @@
             }
             .contact-address {
                 margin-bottom: @padding-base-vertical;
+            }
+        }
+    }
+}
+
+@media print {
+    .resume-overview {
+        .resume-headshot {
+            text-align: center;
+            img {
+                width: 120px;
             }
         }
     }

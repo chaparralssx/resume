@@ -1,5 +1,6 @@
 .resume-body {
     > section {
+        margin-bottom: @padding-large-vertical;
         > h2, .h2 {
             background-color: @brand-primary;
             color: white;
@@ -17,5 +18,15 @@
     }
     ul {
         list-style-type: square;
+    }
+}
+
+@media print {
+    .resume-body {
+        > section {
+            border-top: 1px solid @gray-light;
+            border-left: 1px solid @gray-light;
+            padding-left: @padding-base-horizontal;
+        }
     }
 }

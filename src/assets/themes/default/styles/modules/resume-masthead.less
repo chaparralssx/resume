@@ -18,10 +18,16 @@
     }
 }
 
-@media (max-width: @screen-sm) {
+@media screen and (max-width: @screen-sm) {
     .resume-masthead {
         .resume-contact {
             display: none;
         }
+    }
+}
+
+@media print {
+    .resume-masthead {
+        margin-bottom: @padding-large-vertical;
     }
 }
