@@ -5,7 +5,7 @@ angular.module('app.default').controller('ResumeController', ResumeController);
 /**
  * Handles Resume page actions
  */
-function ResumeController(contactData, summaryData, specialtiesData, experienceData) {
+function ResumeController($sce, contactData, summaryData, specialtiesData, experienceData) {
     var vm = this;
     vm.contact = contactData.data;
     vm.summary = summaryData.data;
