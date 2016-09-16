@@ -1,0 +1,20 @@
+<section class="section-education">
+    <h2 class="section-title">Education</h2>
+    <article ng-repeat="ed in education" class="education">
+        <h3 ng-if="ed.institution" class="institution">{{ed.institution}}</h3>
+        <div ng-if="ed.city" class="city">{{ed.city}}</div>
+        <div ng-if="ed.state" class="state">{{ed.state}}</div>
+        <div ng-if="ed.start" class="start">{{ed.start}}</div>
+        <div ng-if="ed.end" class="end">{{ed.end}}</div>
+        <div ng-if="ed.degree" class="degree">{{ed.degree}}</div>
+        <div ng-if="ed.fields.length" class="fields">
+            <div class="fields-title">Fields</div>
+            <ul>
+                <li ng-repeat="field in ed.fields">{{field}}</li>
+            </ul>
+        </div>
+        <div ng-if="ed.gpa" class="gpa">{{ed.gpa}}</div>
+        <div ng-if="ed.activities" class="activities">{{ed.activities}}</div>
+        <div ng-if="ed.description" class="description">{{ed.description}}</div>
+    </article>
+</section>
